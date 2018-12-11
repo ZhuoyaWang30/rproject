@@ -1,19 +1,3 @@
-#test variables
-#1
-library(ggplot2)
-bigmart.df <- read.csv("bigmart.csv")
-ggplot(data = bigmart.df) + geom_point(aes(x = Item_MRP, y = Item_Outlet_Sales, color = Outlet_Type), size = 1.7)
-ggplot(data = bigmart.df) + geom_point(aes(x = Outlet_Type, y = Item_Outlet_Sales))
-ggplot(data = bigmart.df) + geom_point(aes(x = Item_Visibility, y = Item_Outlet_Sales))
-ggplot(data = bigmart.df) + geom_point(aes(x = Item_Type, y = Item_Outlet_Sales, color = Outlet_Location_Type))
-ggplot(data = bigmart.df) + geom_boxplot(aes(x = Item_Fat_Content, y = Item_Outlet_Sales))
-
-ggplot(data = bigmart.df) + geom_boxplot(aes(x = Outlet_Type, y = Item_Outlet_Sales))
-ggplot(data = bigmart.df) + geom_bar(aes(x = Outlet_Size, y = Item_Outlet_Sales), stat = "summary", fun.y = "mean", bin = 100)
-
-
-
-############################################
 telephone.df <- read.csv('telephone.csv')
 complete.cases(telephone.df)
 x <- telephone.df[complete.cases(telephone.df),]
