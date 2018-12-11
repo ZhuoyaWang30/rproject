@@ -1,4 +1,4 @@
-#Assignment 4
+#As 4
 phone.df <- read.csv("phone_sale.csv")
 View(phone.df)
 str(phone.df)
